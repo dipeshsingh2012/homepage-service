@@ -49,25 +49,32 @@ class ContentfulClient:
         """Returns structured JSON matching Contentful landing page content models."""
         return {
             "hero": {
-                "headline": "Kitchen Appliances That Guaranteed Fit Your Counter",
-                "subheadline": "Never return a coffee machine or blender because it's 2 cm too tall for your upper cabinets. Snap a photo, check fitment, and buy with confidence.",
-                "ctaText": "Explore Space-Verified Appliances",
+                "headline": "Hiljhil Cafe & Specialty Roastery",
+                "subheadline": "Artisanal batch-roasted coffees, handcrafted pastries, and space-verified home espresso bars. Visit our cafe bar or shop whole beans & gear online.",
+                "ctaText": "Explore Roastery & Coffee Bar",
                 "ctaLink": "#/collection",
-                "backgroundImage": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=1600&auto=format&fit=crop&q=80",
+                "backgroundImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600&auto=format&fit=crop&q=80",
                 "spatialHook": {
                     "enabled": True,
-                    "title": "Shop By Your Counter Clearance",
-                    "description": "Have 45cm standard cabinets? We automatically filter for machines with ventilation clearance.",
-                    "defaultClearanceCm": 48.0,
+                    "title": "Home Coffee Bar Clearance Filter",
+                    "description": "Standard 45cm kitchen cabinets? Automatically filter espresso machines and grinders with bean-hopper clearance.",
+                    "defaultClearanceCm": 45.0,
                 },
             },
             "featuredCategories": [
                 {
+                    "id": "cat_beans",
+                    "title": "Freshly Roasted Beans",
+                    "slug": "coffee_beans",
+                    "image": "https://images.unsplash.com/photo-1587734195503-904fca47e0e9?w=600&auto=format&fit=crop&q=80",
+                    "description": "Direct-trade single origins, light floral roasts, and rich chocolatey espresso blends.",
+                },
+                {
                     "id": "cat_espresso",
-                    "title": "Espresso Machines",
+                    "title": "Home Espresso Machines",
                     "slug": "espresso_machine",
                     "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=80",
-                    "description": "Compact to prosumer espresso setups with bean hopper clearance checks.",
+                    "description": "Compact manual to prosumer dual-boiler machines with CounterCheck fitment verification.",
                 },
                 {
                     "id": "cat_blenders",
