@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     CONTENTFUL_SPACE_ID: Optional[str] = None
     CONTENTFUL_ACCESS_TOKEN: Optional[str] = None
     CONTENTFUL_ENVIRONMENT: str = "master"
+    CONTENT_SERVICE_URL: str = "http://localhost:8006/api/v1"
+    CATALOG_SERVICE_URL: str = "http://localhost:8001/api/v1"
     CORS_ORIGINS: list[str] = ["*"]
 
     model_config = SettingsConfigDict(
